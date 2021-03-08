@@ -1,0 +1,156 @@
+/* Variables */
+@font-face {
+  font-family: "GothamBold";
+  src: url(../fonts/GothamBold.otf);
+  font-weight: normal;
+  font-style: normal;
+  display: swap;
+}
+
+@font-face {
+  font-family: "GothamLight";
+  src: url(../fonts/GothamLight.otf);
+  font-weight: normal;
+  font-style: normal;
+  display: swap;
+}
+
+@font-face {
+  font-family: "HelveticaNeueBold";
+  src: url(../fonts/HelveticaNeueBold.otf);
+  font-weight: normal;
+  font-style: normal;
+  display: swap;
+}
+
+@font-face {
+  font-family: "HelveticaNeueLight";
+  src: url(../fonts/HelveticaNeueLight.otf);
+  font-weight: normal;
+  font-style: normal;
+  display: swap;
+}
+
+@font-face {
+  font-family: "HelveticaNeueMedium";
+  src: url(../fonts/HelveticaNeueMedium.otf);
+  font-weight: normal;
+  font-style: normal;
+  display: swap;
+}
+
+/* Inheritance */
+.item-prev, .footer-nav,
+.copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* General styles */
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.sm-txt {
+  font-size: 12px;
+}
+
+.xl-txt {
+  font-size: 22px;
+}
+
+.xxl-txt {
+  font-size: 40px;
+}
+
+h1 {
+  font-family: "GothamBold";
+}
+
+h2 {
+  font-family: "GothamLight";
+}
+
+.strong-txt {
+  font-family: "HelveticaNeueBold";
+  color: #383838;
+}
+
+body {
+  font-family: "HelveticaNeueMedium";
+  color: #383838;
+  background-color: #e0e0e0;
+}
+
+.blackdarkbg {
+  background-color: #383838;
+  height: 60px;
+}
+
+.pink {
+  color: #d35266;
+}
+
+.pink-bg {
+  background-color: #d35266;
+}
+
+/* Header ========================= */
+header {
+  background-color: #d35266;
+}
+
+header .navbar img {
+  width: 50px;
+}
+
+header .navbar li {
+  margin: 0 10px;
+}
+
+/* Hots ads ===================== */
+#carouselHotAds {
+  background-color: #fff;
+}
+
+.hotAds-img {
+  width: 200px;
+}
+
+/* Items categories ================ */
+.item-prev {
+  border: #888888 solid 1px;
+  background-color: #fff;
+}
+
+/* Footer ================ */
+footer {
+  background-color: #fff;
+}
+
+footer h4 {
+  text-align: center;
+  border-bottom: #d35266 solid 2px;
+}
+
+@media screen and (min-width: 768px) {
+  .full-width {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

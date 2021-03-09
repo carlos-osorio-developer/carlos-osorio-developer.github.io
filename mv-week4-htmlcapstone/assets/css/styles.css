@@ -40,8 +40,8 @@
 }
 
 /* Inheritance */
-.item-prev, .footer-nav,
-.copyright {
+.carousel-container, .item-prev, .footer-nav,
+.copyright, .search-product {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -113,6 +113,10 @@ body {
 /* Header ========================= */
 header {
   background-color: #d35266;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
 }
 
 header .navbar img {
@@ -123,19 +127,33 @@ header .navbar li {
   margin: 0 10px;
 }
 
+header .searchbar {
+  width: 200px;
+  margin: 0 5px;
+}
+
 /* Hots ads ===================== */
 #carouselHotAds {
+  margin-top: 114px;
   background-color: #fff;
 }
 
 .hotAds-img {
-  width: 200px;
+  width: 300px;
 }
 
 /* Items categories ================ */
 .item-prev {
   border: #888888 solid 1px;
   background-color: #fff;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.dropdown-item:hover {
+  background-color: #333333;
+  color: #fff;
 }
 
 /* Footer ================ */
@@ -148,9 +166,80 @@ footer h4 {
   border-bottom: #d35266 solid 2px;
 }
 
+/* checklist ================== */
+#checklist {
+  margin-top: 114px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#checklist .item-prop {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 150px;
+          flex: 1 1 150px;
+  margin: 0 auto;
+}
+
+.hotAds-img {
+  max-width: 300px;
+  width: 90%;
+}
+
+@media screen and (min-width: 576px) {
+  #carouselHotAds {
+    margin-top: 192px;
+  }
+  #checklist {
+    margin-top: 192px;
+  }
+}
+
 @media screen and (min-width: 768px) {
+  #items-list {
+    margin-top: 192px;
+    border-left: 1px solid;
+  }
+  #checklist .item-prop {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    margin: 0 10px;
+  }
   .full-width {
     width: 100%;
+  }
+  .hotAds-img {
+    width: 400px;
+  }
+  .item-prev {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 45%;
+            flex: 1 0 45%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .item-prev {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 23%;
+            flex: 1 0 23%;
+  }
+  .item-prev h3 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .item-prev {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 18%;
+            flex: 1 0 18%;
+  }
+  .item-prev h3 {
+    font-size: 20px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

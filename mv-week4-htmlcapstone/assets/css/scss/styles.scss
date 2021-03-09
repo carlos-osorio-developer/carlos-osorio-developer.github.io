@@ -94,7 +94,11 @@ body {
 /* Header ========================= */
 
 header {
-    background-color: $maincolor;   
+    background-color: $maincolor;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
 
     .navbar {
         img{
@@ -103,18 +107,28 @@ header {
 
         li {
             margin: 0 10px;
-        }
+        }        
+    }
+
+    .searchbar {
+        width: 200px;
+        margin: 0 5px;
     }
 }
 
 /* Hots ads ===================== */
 
 #carouselHotAds {
+    margin-top: 114px;
     background-color: #fff;
 }
 
+.carousel-container {
+    @extend %flex-column;
+}
+
 .hotAds-img {
-    width: 200px;
+    width: 300px;
 }
 
 /* Items categories ================ */
@@ -123,6 +137,12 @@ header {
     border: $light-dark solid 1px;
     background-color: #fff;
     @extend %flex-column;
+    justify-content: space-between;
+}
+
+.dropdown-item:hover {
+    background-color: #333333;
+    color: #fff;
 }
 
 /* Footer ================ */
@@ -141,4 +161,5 @@ footer {
     @extend %flex-column;
 }
 
+@import 'search';
 @import 'queries';
